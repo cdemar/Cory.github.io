@@ -1,2 +1,3 @@
-# Cory.github.io
+# My_Web
+
 Project for my personal webpage
