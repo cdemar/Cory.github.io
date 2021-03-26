@@ -2,21 +2,21 @@
   --main-color: #142b08;
   --main-text-color: #f37a40;
   --content-text-color: #6f2403;
+  --content--text-link-color: #8b4f35;
   --gray-color: #475055;
   --splash-color: #8f832e;
 }
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+/* This is for all platforms */
 body {
   background-color: var(--main-color);
 }
-
-/* This is for all platforms */
 .margin {
   margin: 0 10%;
 }
@@ -30,6 +30,7 @@ h1 {
 p {
   font-size: 20px;
   line-height: 1.6;
+  color: var(--main-text-color);
 }
 a {
   text-decoration: none;
@@ -42,7 +43,7 @@ a:hover {
 
 /* All fo this is header */
 header {
-  height: 12.5vh;
+  height: 15vh;
 }
 .navBar {
   float: right;
@@ -54,10 +55,6 @@ header {
   font-size: 23px;
   text-transform: uppercase;
 }
-nav a:hover {
-  color: #d3d2cd;
-}
-
 #resume {
   color: var(--content-text-color);
   padding: 3px;
@@ -69,5 +66,36 @@ nav a:hover {
   border: 2px solid var(--main-text-color);
   color: var(--main-text-color);
 }
+
 @media only screen and (max-device-width: 1450px) {
+}
+
+/*body content*/
+#info h1 {
+  color: var(--content-text-color);
+}
+#about p a {
+  color: var(--content--text-link-color);
+}
+#about p a:hover {
+  color: var(--gray-color);
+}
+
+/* All of this is Footer */
+footer {
+  height: 7.5vh;
+}
+.copyRight {
+  float: left;
+  margin-top: 22px;
+  color: var(--splash-color);
+  font-size: 16px;
+}
+.mediaIcon {
+  float: right;
+  margin-top: 20px;
+}
+.mediaIcon a {
+  display: inline-block;
+  margin-left: 25px;
 }

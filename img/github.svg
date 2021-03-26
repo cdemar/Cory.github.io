@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
-<svg height="22px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" 
-viewBox="0 0 67 67" width="22px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
+<svg height="30px" id="Layer_1" style="enable-background:new 0 0 67 67;" version="1.1" 
+viewBox="0 0 67 67" width="30px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" 
 xmlns:xlink="http://www.w3.org/1999/xlink">
 <path 
 d="M20.543,34.569c-0.054-0.001,0.592,1.366,0.61,1.366  
@@ -18,5 +18,5 @@ c0.305-1.108,0.47-2.419,0.502-3.971c-0.008-4.21-2.058-5.699-2.451-6.398c0.58-3.1
 c-1.162-0.406-4.041,1.045-5.615,2.066c-2.564-0.737-7.986-0.666-10.019,0.19c-3.751-2.639-5.736-2.235-5.736-2.235  
 s-1.283,2.259-0.339,5.565c-1.234,1.546-2.154,2.64-2.154,5.539C19.906,31.83,20.102,33.292,20.543,34.569z M33,64  
 C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" 
-style="fill-rule:evenodd;clip-rule:evenodd;fill:#D8D9D8;"/>
+style="fill-rule:evenodd;clip-rule:evenodd;fill:#8f832e;"/>
 </svg>
