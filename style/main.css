@@ -1,10 +1,10 @@
 :root {
-  --main-color: #142b08;
-  --main-text-color: #f37a40;
-  --content-text-color: #6f2403;
-  --content--text-link-color: #8b4f35;
-  --gray-color: #475055;
-  --splash-color: #8f832e;
+  --Background-color: #001900;
+  --main-text-color: #9ccc9c;
+  --heading-text-color: #ff934c; /*?*/
+  --content-text-link-color: #649568; /*?*/
+  --splash-color: #f60;
+  --gray-color: #909590;
 }
 * {
   box-sizing: border-box;
@@ -15,7 +15,7 @@
 
 /* This is for all platforms */
 body {
-  background-color: var(--main-color);
+  background-color: var(--Background-color);
 }
 .margin {
   margin: 0 10%;
@@ -23,10 +23,12 @@ body {
 ul {
   list-style-type: square;
 }
-h1 {
+h1,
+h2 {
   text-align: center;
-  font-size: 48px;
+  color: var(--heading-text-color);
 }
+
 p {
   font-size: 20px;
   line-height: 1.6;
@@ -56,26 +58,22 @@ header {
   text-transform: uppercase;
 }
 #resume {
-  color: var(--content-text-color);
+  color: var(--heading-text-color);
   padding: 3px;
-  border: 2px solid var(--content-text-color);
+  border: 2px solid var(--heading-text-color);
   text-decoration: none;
 }
 #resume:hover {
-  background-color: var(--gray-color);
   border: 2px solid var(--main-text-color);
-  color: var(--main-text-color);
+  color: var(--gray-color);
 }
 
 @media only screen and (max-device-width: 1450px) {
 }
 
 /*body content*/
-#info h1 {
-  color: var(--content-text-color);
-}
 #about p a {
-  color: var(--content--text-link-color);
+  color: var(--content-text-link-color);
 }
 #about p a:hover {
   color: var(--gray-color);
