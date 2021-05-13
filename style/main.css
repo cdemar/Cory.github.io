@@ -20,6 +20,9 @@ body {
 .margin {
   margin: 0 10%;
 }
+.bodyMargin {
+  margin: 0 15%;
+}
 ul {
   list-style-type: square;
 }
@@ -28,9 +31,9 @@ h2 {
   text-align: center;
   color: var(--heading-text-color);
 }
-
 p {
-  font-size: 20px;
+  font-size: clamp(1.3125rem, 5vw, 2rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   line-height: 1.6;
   color: var(--main-text-color);
 }
@@ -43,9 +46,20 @@ a:hover {
   color: var(--gray-color);
 }
 
+@media only screen and (max-width: 350px) {
+  p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  p {
+    font-size: 13.5px;
+  }
+}
+
 /* All fo this is header */
 header {
-  height: 15vh;
+  height: 25vh;
 }
 .navBar {
   float: right;
@@ -68,15 +82,93 @@ header {
   color: var(--gray-color);
 }
 
-@media only screen and (max-device-width: 1450px) {
+/* On screens that are 600px wide or less,
+make the menu links stack on top of each 
+other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .navBar a {
+    float: none;
+    width: 100%;
+  }
+  #resume {
+    color: var(--heading-text-color);
+    padding: 3px;
+    border: 2px solid var(--heading-text-color);
+    text-decoration: none;
+  }
+  #resume:hover {
+    border: 2px solid var(--main-text-color);
+    color: var(--gray-color);
+  }
 }
 
 /*body content*/
+#hero {
+  height: 75vh;
+}
+#myName {
+  margin-bottom: 5px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+}
+#hero h1,
+h2 {
+  margin-bottom: 5px;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  text-align: left;
+}
+#hero h2 {
+  color: var(--splash-color);
+}
+#myHero {
+  margin-top: 30px;
+  max-width: 585px;
+}
 #about p a {
   color: var(--content-text-link-color);
 }
 #about p a:hover {
   color: var(--gray-color);
+}
+
+@media only screen and (max-width: 1550px) {
+  #myHero {
+    max-width: 490px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  #myHero {
+    max-width: 380px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #hero h1,
+  h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  #hero h1,
+  h2 {
+    font-size: 39px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #myName {
+    font-size: 13px;
+  }
+  #hero h1,
+  h2 {
+    font-size: 23px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  #myName {
+    font-size: 11px;
+  }
+  #hero h1,
+  h2 {
+    font-size: 20px;
+  }
 }
 
 /* All of this is Footer */
