@@ -48,6 +48,12 @@ a:hover {
   color: var(--gray-color);
 }
 
+@media only screen and (max-width: 1025px) {
+  .stopMove {
+    overflow: hidden;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   p {
     font-size: 15px;
@@ -72,7 +78,7 @@ header {
 .menu li {
   display: inline;
 }
-.menu-items {
+.menuItems {
   display: inline-block;
   margin-left: 25px;
   font-size: 23px;
@@ -89,7 +95,7 @@ header {
   color: var(--gray-color);
 }
 
-@media screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
   /* This is for the Haberger stuff */
   .hamburger {
     --hm-width: 3em;
@@ -108,7 +114,7 @@ header {
     content: "";
     width: 50%;
     height: inherit;
-    background-color: var(--heading-text-color);
+    background-color: var(--splash-color);
     display: block;
     position: absolute;
     top: 0;
@@ -126,11 +132,11 @@ header {
   .close.hamburger::after {
     left: 50%;
     transform: translate(-50%) rotate(-450deg);
-    background-color: var(--gray-color);
+    background-color: var(--heading-text-color);
   }
   .close.hamburger {
     transform: rotate(45deg);
-    background-color: var(--gray-color);
+    background-color: var(--heading-text-color);
   }
   /* This is for the Haberger stuff */
 
@@ -140,7 +146,7 @@ header {
   .navBar {
     margin-top: 0;
     position: absolute;
-    background-color: blue;
+    background-color: black;
     left: 0;
     right: 0;
     top: 0;
@@ -155,11 +161,13 @@ header {
     opacity: 0;
     transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
   }
-  .reveal-nav {
+  .revealNav {
     transform: scaleX(1);
-    opacity: 1;
+    opacity: 0.93;
+    position: fixed;
   }
-  .menu-items {
+  .menuItems {
+    color: var(--splash-color);
     float: none;
     width: 100%;
     font-size: calc(1.125rem + 4vw);
@@ -171,25 +179,25 @@ header {
   .menu li + li {
     margin-top: 3em;
   }
-  .reveal-items .menu-items {
+  .revealItems .menuItems {
     transform: translate(0);
     opacity: 1;
   }
 
-  .reveal-items li:nth-child(1) .menu-items {
+  .revealItems li:nth-child(1) .menuItems {
     transition-delay: 0.1s;
   }
-  .reveal-items li:nth-child(2) .menu-items {
+  .revealItems li:nth-child(2) .menuItems {
     transition-delay: 0.2s;
   }
-  .reveal-items li:nth-child(3) .menu-items {
+  .revealItems li:nth-child(3) .menuItems {
     transition-delay: 0.3s;
   }
-  .reveal-items li:nth-child(4) .menu-items {
+  .revealItems li:nth-child(4) .menuItems {
     transition-delay: 0.4s;
   }
   #resume {
-    color: var(--main-text-color);
+    color: var(--splash-color);
     padding: 3px;
     border: none;
     text-decoration: none;
@@ -269,6 +277,18 @@ h2 {
     font-size: 20px;
   }
 }
+
+/* This is the 'about' secrtion */
+#about {
+  max-width: 750px;
+}
+#about p {
+  padding-bottom: 1.25rem;
+}
+
+/* This is the 'project' secrtion */
+
+/* This is the 'contact' secrtion */
 
 /* All of this is Footer */
 footer {
