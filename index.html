@@ -17,7 +17,9 @@
 
       <!--Header Navbar-->
       <a class="hamburger" href="#"></a>
+
       <nav class="navBar">
+
         <ul class="menu">
           <li><a class="menuItems" href="#about">About</a></li>
           <li><a class="menuItems" href="#projects">Projects</a></li>
@@ -26,6 +28,7 @@
             href="https://docs.google.com/document/d/1mweWUvvQynIPLzdXf9txffPYQT1mk0nnPBOmd3tHEvs/edit?usp=sharing" 
             target="_blank">Resume</a></li>
         </ul>
+
       </nav>
     </div>
   </header>
@@ -35,46 +38,105 @@
     <div class="bodyMargin">
       <div id="hero">
         <p id="myName">Hello, my name is</p>
-        <h1 id="name">Cory DeMar.</h1>
-        <h2 id="fistSentence">I enjoy learning and programming.</h2>
+        <h1 >Cory DeMar.</h1>
+        <h1 class="firstSentence">I enjoy learning & programming.</h1>
 
         <!--- Web Dev, Front End Dev, Web Designer, Full Stock Dev, Dev Ops-->
-        <p id="myHero">I'm a design-minded, detail oriented web developer passionate 
-          about combining beautiful code with beautiful design. Curently 
-          I'm freelancing to hone more of my skills.</p>
+        <p id="myHero">I'm a design-minded, detail-oriented web developer passionate 
+          about combining beautiful code with beautiful design. Currently, I'm 
+          freelancing to hone more of my skills.</p>
         </div>
 
-      <div id="about">
+      <section id="about">
         <h2>About</h2>
 
-        <p>Hello, I'm Cory, a husband to my wife and a father to my son. I am a communicator
-          by degree and programmer by heart. I have always been interested in learning new 
-          things all the time and thus I have many different hobbies. Throughout my time in 
-          school, work, and volunteering I have been refining the skills I have learned, as 
-          well as, learning new things as well. 
-          I've lived with the mindset my father taught me "Anyone who stops learning is old, 
-          whether at twenty or eighty. Anyone who keeps learning stays young. The greatest 
-          thing in life is to keep your mind young." - Henry Ford
+        <div class="content">
+          <p>Hello, I'm Cory, a husband, and a father. I am a communicator by degree and 
+            programmer by heart. I have always been obsessed with learning new things all 
+            the time and so I have many different hobbies. Throughout my time in school, 
+            work, and volunteering I have been refining the skills I have learned, as well 
+            as learning new things. I've lived with the mindset that Henry Ford said, 
+            <em>
+              "Anyone who stops learning is old, whether at twenty or eighty. Anyone who 
+              keeps learning stays young. The greatest 
+              thing in life is to keep your mind young."
+            </em>
+          </p>
+
+          <p>Within my time of learning this new skill of programming, I have started to 
+            use HTML, CSS, and javascript. I have also gained a backlog of different clients 
+            who would like me to build a website and thus allowing me to refine my skills 
+            even more by exploring different styles of websites.
+          </p>
+
+          <p>If you are interested in knowing what new thing I am learning about or if you 
+            are just interested to know if I am willing to tackle a website you can 
+            reach out to me 
+            <a class="email" href="mailto: demar.cory@gmail.com">here</a> and we can connect!
+          </p>
+       </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>What I've Done</h2>
+          <div class="projRow">
+            
+            <div class="projItemWrapper">
+              <div class="projItem">
+              
+                <img class="webImg"  src="img/personalWebsite_V1.png" alt="My first website">
+                <!--
+                <div class="projOverlay"></div>
+
+                <div class="links">
+                  <a class= "webLink" href="https://cdemar.github.io/personalWebsite_V1/" target="_blank">
+                    <img src="img/link.svg" />
+                  </a>
+      
+                  <a class="github" href="https://github.com/cdemar/personalWebsite_V1"  target="_blank">
+                    <img src="img/github.svg" />
+                  </a>
+                </div>
+-->
+              </div>
+            </div>
+            <!--
+              When I get more proj I add this here
+              I also copy all the stuff from above
+            -->
+
+            <div class="projItemWrapper">
+              <div class="projItem">
+              
+                <img class="webImg"  src="img/personalWebsite_V1.png" alt="My first website">
+                <!--
+                <div class="projOverlay"></div>
+
+                <div class="links">
+                  <a class= "webLink" href="https://cdemar.github.io/personalWebsite_V1/" target="_blank">
+                    <img src="img/link.svg" />
+                  </a>
+      
+                  <a class="github" href="https://github.com/cdemar/personalWebsite_V1"  target="_blank">
+                    <img src="img/github.svg" />
+                  </a>
+                </div>
+-->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to colaborate on a project, want a project worked on, or just want 
+          say 'Hi' you can contact me.
         </p>
-
-        <p>Within my time of learning this new skill of programming a website I have started 
-          to use HTML, CSS, and javascript. I have also gained a backlog of different clients 
-          who would like me to build a website and thus allowing me to refine my skills even 
-          more by build different styles of websites.
-        </p>
-
-        <p>If you are interested in knowing what new thing I am learning about now or if you 
-          are just interested to know if I am willing to try my hands on a website you can 
-          reach out to me 
-          <a href="mailto: demar.cory@gmail.com">here</a> and we can connect!
-        </p>
-      </div>
-
-      <div id="projects">
-        <!--<img class="webImg" src="img/personalWebsite_V1.png" alt="My first website">-->
-      </div>
-
-      <div id="contact"></div>
+        <a id="email" href="mailto: demar.cory@gmail.com">demar.cory@gmail.com</a>
+      </section>
     </div>
   </main>
 
@@ -84,11 +146,11 @@
 
       <!--Footer Navbar-->
       <nav class="mediaIcon">
-        <a href="https://www.linkedin.com/in/cdemar/" class="linkedin" target="_blank">
+        <a class="linkedin" href="https://www.linkedin.com/in/cdemar/" target="_blank">
           <img src="img/linkedin.svg" />
         </a>
 
-        <a href="https://github.com/cdemar" class="github" target="_blank">
+        <a class="github" href="https://github.com/cdemar" target="_blank">
           <img src="img/github.svg" />
         </a>
       </nav>
