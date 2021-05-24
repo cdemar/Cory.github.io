@@ -53,14 +53,32 @@ a:hover {
   color: var(--gray-color);
 }
 
+@media only screen and (max-width: 1250px) {
+  .bodyMargin {
+    margin: 0 5%;
+  }
+}
 @media only screen and (max-width: 1025px) {
   .stopMove {
     overflow: hidden;
   }
 }
-@media only screen and (max-width: 950px) {
-  .bodyMargin {
-    margin: 0 10%;
+@media only screen and (max-width: 700px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  h1,
+  h2 {
+    font-size: 39px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  h1,
+  h2 {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 350px) {
@@ -70,6 +88,10 @@ a:hover {
   }
 }
 @media only screen and (max-width: 280px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
   p,
   a {
     font-size: 13.5px;
@@ -78,7 +100,7 @@ a:hover {
 
 /* All fo this is header */
 header {
-  height: 25vh;
+  min-height: 25vh;
 }
 .navBar,
 .hamburger {
@@ -221,7 +243,7 @@ header {
 
 /*body content*/
 #hero {
-  height: 75vh;
+  min-height: 75vh;
 }
 #myName {
   margin-bottom: 5px;
@@ -250,35 +272,25 @@ header {
     max-width: 490px;
   }
 }
+@media only screen and (max-width: 1250px) {
+  #hero {
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+}
 @media only screen and (max-width: 950px) {
   #hero h1 {
     max-width: 435px;
-  }
-}
-@media only screen and (max-width: 700px) {
-  #hero h1 {
-    font-size: 40px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  #hero h1 {
-    font-size: 39px;
   }
 }
 @media only screen and (max-width: 360px) {
   #myName {
     font-size: 13px;
   }
-  #hero h1 {
-    font-size: 23px;
-  }
 }
 @media only screen and (max-width: 280px) {
   #myName {
     font-size: 11px;
-  }
-  #hero h1 {
-    font-size: 20px;
   }
 }
 
@@ -292,14 +304,28 @@ header {
 }
 #about p {
   text-indent: 5%;
-  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 }
 #about p em {
   text-indent: 0;
   float: right;
-  padding: 1.75% 0 3.5% 10%;
+  padding: 0.5% 12% 2% 18%;
 }
 
+@media only screen and (max-width: 950px) {
+  #about {
+    min-height: 75vh;
+  }
+  #about p {
+    padding-top: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  #about {
+    padding-bottom: 50px;
+  }
+}
 @media only screen and (max-width: 280px) {
   #about {
     padding-bottom: 50px;
@@ -330,31 +356,6 @@ header {
     width: 100%;
   }
 }
-@media only screen and (max-width: 950px) {
-  .bodyMargin {
-    margin: 0 5%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  #projects h2 {
-    font-size: 40px;
-  }
-}
-@media only screen and (max-width: 540px) {
-  #projects h2 {
-    font-size: 39px;
-  }
-}
-@media only screen and (max-width: 360px) {
-  #projects h2 {
-    font-size: 23px;
-  }
-}
-@media only screen and (max-width: 280px) {
-  #projects h2 {
-    font-size: 20px;
-  }
-}
 
 /* This is the 'contact' secrtion */
 #contact {
@@ -365,7 +366,7 @@ header {
   max-width: 630px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 #email {
   color: var(--heading-text-color);
@@ -378,36 +379,69 @@ header {
   color: var(--gray-color);
 }
 
-@media only screen and (max-width: 700px) {
-  #contact h2 {
-    font-size: 40px;
+@media only screen and (max-width: 1130px) {
+  #contact p {
+    max-width: 589px;
   }
 }
-@media only screen and (max-width: 540px) {
-  #contact h2 {
-    font-size: 39px;
+@media only screen and (max-width: 1056px) {
+  #contact p {
+    max-width: 551px;
   }
 }
-@media only screen and (max-width: 360px) {
-  #contact h2 {
-    font-size: 23px;
+@media only screen and (max-width: 988px) {
+  #contact p {
+    max-width: 515px;
   }
 }
-@media only screen and (max-width: 280px) {
-  #contact h2 {
-    font-size: 20px;
+@media only screen and (max-width: 923px) {
+  #contact p {
+    max-width: 481px;
+  }
+}
+@media only screen and (max-width: 862px) {
+  #contact p {
+    max-width: 450px;
+  }
+}
+@media only screen and (max-width: 807px) {
+  #contact p {
+    max-width: 421px;
+  }
+}
+@media only screen and (max-width: 465px) {
+  #contact p {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 434px) {
+  #contact p {
+    font-size: 14px;
+    max-width: 365px;
+  }
+}
+@media only screen and (max-width: 404px) {
+  #contact p {
+    font-size: 13px;
+    max-width: 339px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  #contact p {
+    font-size: 12px;
+    max-width: 313px;
   }
 }
 
 /* All of this is Footer */
 footer {
-  height: 7.5vh;
+  min-height: 7.5vh;
 }
 .copyRight {
   float: left;
   margin-top: 22px;
   color: var(--splash-color);
-  font-size: 16px;
+  font-size: clamp(0.75rem, 2vw, 1rem);
 }
 .mediaIcon {
   float: right;
@@ -416,4 +450,42 @@ footer {
 .mediaIcon a {
   display: inline-block;
   margin-left: 25px;
+}
+
+@media only screen and (max-width: 1025px) {
+  footer {
+    height: 10.5vh;
+  }
+  .copyRight {
+    max-width: 149px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  footer {
+    height: 9.5vh;
+  }
+}
+@media only screen and (max-width: 700px) {
+  footer {
+    height: 8.5vh;
+  }
+  .copyRight {
+    max-width: 130px;
+  }
+}
+@media only screen and (max-width: 605px) {
+  .copyRight {
+    max-width: 112px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .mediaIcon a {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 280px) {
+  .mediaIcon a {
+    margin-left: 15px;
+  }
 }
