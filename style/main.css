@@ -376,7 +376,7 @@ header {
 .projItem {
   position: relative;
   padding: 5px;
-  width: 100%; /* Change this when I have more proj (580px)*/
+  width: 50%;
   margin-top: 10px;
 }
 .webImg {
@@ -416,10 +416,40 @@ header {
 }
 .webLink img,
 .githubLink img {
-  transform: scale(
-    1.3vh,
-    1.3vh
-  ); /* This need to get ajusted by the size of img*/
+  transform: scale(1.5, 1.5);
+}
+@media only screen and (max-width: 1024px) {
+  .projItem {
+    width: 100%;
+  }
+  .webLink img,
+  .githubLink img {
+    transform: scale(2, 2);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .webLink img,
+  .githubLink img {
+    transform: scale(1.5, 1.5);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .webLink img,
+  .githubLink img {
+    transform: scale(1.2, 1.2);
+  }
+}
+@media only screen and (max-width: 414px) {
+  .webLink img,
+  .githubLink img {
+    transform: scale(1.05, 1.05);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .webLink img,
+  .githubLink img {
+    transform: scale(1, 1);
+  }
 }
 
 /* This is the 'contact' secrtion */
@@ -507,6 +537,7 @@ footer {
   margin-top: 22px;
   color: var(--splash-color);
   font-size: clamp(0.75rem, 2vw, 1rem);
+  padding-bottom: 10px;
 }
 .mediaIcon {
   float: right;
