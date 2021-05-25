@@ -376,7 +376,7 @@ header {
 .projItem {
   position: relative;
   padding: 5px;
-  width: 50%;
+  width: 100%; /* Change to 50 when adding a second*/
   margin-top: 10px;
 }
 .webImg {
@@ -416,7 +416,7 @@ header {
 }
 .webLink img,
 .githubLink img {
-  transform: scale(1.5, 1.5);
+  transform: scale(2, 2); /*change to 1.5 when adding a second*/
 }
 @media only screen and (max-width: 1024px) {
   .projItem {
