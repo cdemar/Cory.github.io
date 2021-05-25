@@ -128,6 +128,13 @@ header {
   color: var(--gray-color);
 }
 
+@media only screen and (max-width: 1024px) {
+  header {
+    min-height: 15vh;
+    padding-bottom: 100px;
+  }
+}
+
 @media only screen and (max-width: 1025px) {
   /* This is for the Haberger stuff */
   .hamburger {
@@ -278,6 +285,12 @@ header {
     padding-right: 5%;
   }
 }
+@media only screen and (max-width: 1024px) {
+  #hero {
+    min-height: 40vh;
+    padding-bottom: 100px;
+  }
+}
 @media only screen and (max-width: 950px) {
   #hero h1 {
     max-width: 435px;
@@ -312,6 +325,12 @@ header {
   padding: 0.5% 12% 2% 18%;
 }
 
+@media only screen and (max-width: 1024px) {
+  #about {
+    min-height: 60vh;
+    padding-bottom: 100px;
+  }
+}
 @media only screen and (max-width: 950px) {
   #about {
     min-height: 75vh;
@@ -320,10 +339,19 @@ header {
     padding-top: 0.75rem;
   }
 }
-
+@media only screen and (max-width: 540px) {
+  #about {
+    padding-bottom: 120px;
+  }
+}
 @media only screen and (max-width: 475px) {
   #about {
     padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #about {
+    padding-bottom: 76px;
   }
 }
 @media only screen and (max-width: 280px) {
@@ -339,22 +367,59 @@ header {
 #projects .container h2 {
   padding-bottom: 10px;
 }
-#projects .projItemWrapper {
-  width: 47%;
-  display: inline-block;
-  padding: 0 0 5px;
-  margin: 0 1% 30px;
-  vertical-align: top;
+.projRow {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 100px;
 }
-#projects img {
+.projItem {
+  position: relative;
+  padding: 5px;
+  width: 100%; /* Change this when I have more proj (580px)*/
+  margin-top: 10px;
+}
+.webImg {
+  display: block;
   width: 100%;
-  height: auto;
 }
-
-@media (max-width: 1250px) {
-  #projects .projItemWrapper {
-    width: 100%;
-  }
+.links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.links .webLink {
+  transform: translateX(-100px);
+  transition: transform 0.25s;
+}
+.links .githubLink {
+  transform: translateX(100px);
+  transition: transform 0.25s;
+}
+.links:hover {
+  opacity: 1;
+}
+.links:hover .webLink,
+.links:hover .githubLink {
+  transform: translateX(0);
+}
+.githubLink {
+  padding-left: 15%;
+}
+.webLink img,
+.githubLink img {
+  transform: scale(
+    1.3vh,
+    1.3vh
+  ); /* This need to get ajusted by the size of img*/
 }
 
 /* This is the 'contact' secrtion */
